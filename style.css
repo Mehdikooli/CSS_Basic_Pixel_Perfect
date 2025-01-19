@@ -1,0 +1,167 @@
+/* Supprime les marges et le padding par défaut pour tous les éléments et inclut border-box dans les calculs des dimensions */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Définit la couleur de fond pour le corps de la page */
+body {
+    background-color: #D74949; /* Rouge foncé */
+    font-family: 'Roboto';
+    position: relative;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Style pour le conteneur principal (main) */
+main {
+    max-width: 1110px; /* Largeur maximale du conteneur */
+    height: 615px; /* Hauteur fixe */
+    background-color: #F3F3F3; /* Fond gris clair */
+    margin: auto; /* Centre le conteneur horizontalement */
+    height: calc(100% - 70px);  /* Ajuste la hauteur pour qu'elle corresponde à la hauteur totale de l'écran (100%)
+    moins 70px, qui pourrait correspondre à la hauteur d'un header ou footer, 
+    afin d'occuper l'espace restant */
+}
+
+/* Style pour le titre principal (h1) */
+h1 {
+    font-family: 'Roboto'; /* Police utilisée */
+    font-size: 14px; /* Taille de la police */
+    padding-top: 100px; /* Espacement au-dessus */
+    padding-left: 49px; /* Espacement à gauche */
+    text-align: left; /* Alignement du texte à gauche */
+    color: black; /* Couleur du texte */
+    font-weight: 300; /* Poids léger pour la police */
+}
+
+/* Style pour le sous-titre (h2) */
+h2 {
+    width: 1009px; /* Largeur spécifique */
+    height: 19px; /* Hauteur spécifique */
+    margin-top: 28px; /* Espacement au-dessus */
+    margin-left: 50px; /* Espacement à gauche */
+    opacity: 0px; /* Rendu invisible tout en prenant de la place */
+    text-align: end; /* Alignement du texte à droite */
+    font-family: Roboto; /* Police utilisée */
+    font-size: 16px; /* Taille de la police */
+    font-weight: 800; /* Poids gras */
+    letter-spacing: 0.07em; /* Espacement entre les lettres */
+    line-height: 18.75px; /* Hauteur de ligne */
+}
+
+/* Style pour le paragraphe principal */
+.mainP {
+    margin: auto; /* Centre horizontalement */
+    width: 1009px; /* Largeur spécifique */
+    height: 23px; /* Hauteur spécifique */
+    text-align: center; /* Centre le texte */
+    text-transform: uppercase; /* Convertit le texte en majuscules */
+    font-weight: 700; /* Poids gras */
+    font-family: Roboto; /* Police utilisée */
+    font-size: 20px; /* Taille de la police */
+    line-height: 23.44px; /* Hauteur de ligne */
+}
+
+/* Met en surbrillance les mots à l'intérieur du paragraphe grâce à la balise <span> */
+span {
+    color: #D74949; /* Texte rouge */
+}
+
+/* Style pour la carte de profil */
+.card {
+    width: 200px; /* Largeur fixe */
+    height: 300px; /* Hauteur fixe */
+    margin-top: 38px; /* Espacement au-dessus */
+    margin-left: 49px; /* Espacement à gauche */
+    border-radius: 15px; /* Coins arrondis */
+    background-color: #fff; /* Fond blanc */
+}
+
+/* Réinitialisation des propriétés pour tous les div */
+div {
+    display: block; /* Affichage en bloc */
+    unicode-bidi: isolate; /* Isolation directionnelle du texte */
+}
+
+/* Style pour les images */
+img {
+    overflow-clip-margin: content-box; /* Découpe à l'intérieur des marges */
+    overflow: clip; /* Coupe le contenu dépassant */
+}
+
+/* Style pour le nom dans la carte */
+.John {
+    width: 64px; /* Largeur fixe */
+    height: 16px; /* Hauteur fixe */
+    margin-top: 10px; /* Espacement au-dessus */
+    margin-left: 10px; /* Espacement à gauche */
+    font-weight: 700; /* Poids gras */
+    font-size: 14px; /* Taille de la police */
+    line-height: 16.41px; /* Hauteur de ligne */
+    color: #000; /* Noir pour le texte */
+}
+
+/* Style pour la description du métier */
+.metier {
+    width: 152px; /* Largeur fixe */
+    height: 16px; /* Hauteur fixe */
+    margin-top: 5px; /* Espacement au-dessus */
+    margin-left: 10px; /* Espacement à gauche */
+    font-weight: 300; /* Poids léger */
+    font-size: 14px; /* Taille de la police */
+    line-height: 16.41px; /* Hauteur de ligne */
+    color: #000; /* Noir pour le texte */
+}
+
+/* Style pour l'icône LinkedIn */
+.linkedin {
+    width: 18px; /* Taille fixe */
+    height: 18px;
+    margin-top: 10px; /* Espacement au-dessus */
+    margin-left: 10px; /* Espacement à gauche */
+}
+
+/* Style pour l'icône WhatsApp */
+.whatsapp {
+    width: 18px; /* Taille fixe */
+    height: 18px;
+    margin-top: 10px; /* Espacement au-dessus */
+    margin-left: 5px; /* Espacement à gauche */
+}
+
+/* Style pour l'ellipse de profil */
+.ellipseProfile {
+    width: 54px; /* Largeur de l'ellipse */
+    height: 54px; /* Hauteur de l'ellipse */
+    margin-left: 160px; /* Espacement à gauche */
+    background-color: #d9d9d9; /* Fond gris clair */
+    border-radius: 50%; /* Forme circulaire */
+}
+
+/* Style pour le footer */
+footer {
+    max-width: 100%; /* Occupe toute la largeur */
+    height: 70px; /* Hauteur fixe */
+    background-color: #3A3A3A; /* Gris foncé */
+}
+
+/* Style pour le texte du footer */
+.pFooter {
+    font-family: Roboto; /* Police utilisée */
+    font-size: 14px; /* Taille de la police */
+    font-weight: 700; /* Poids gras */
+    text-align: center; /* Centre horizontalement */
+    color: #F3F3F3; /* Gris clair pour le texte */
+    margin: auto 0; /* Centre verticalement */
+}
+
+/* Petit rectangle dans le footer */
+.rectangle_footer {
+    height: 23px; /* Hauteur fixe */
+    width: 13px; /* Largeur fixe */
+    background-color: #3A3A3A; /* Gris foncé */
+}
